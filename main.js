@@ -10,7 +10,7 @@ async function displayposts() {
         div.innerHTML = `<h3> ${post.title}</h3><p>${post.body}</p>`;
 });
     } catch (err){
-        container.innerHTML = `<p style = "color:red;"> Failed to load posts:`
+        container.innerHTML = `<p style = "color:red;"> Failed to load posts: ${(err.message)}</p>`
     }
 }
 displayposts();
